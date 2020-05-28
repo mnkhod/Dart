@@ -35,6 +35,11 @@ Route::get('/products', function () {
     return view('products',['products' => null]);
 });
 
+Route::get('/products/{slug}',function($slug){
+		return view('productsSingle');
+});
+
+
 Route::get('/faq', function(){
 		return view('faq');
 });
