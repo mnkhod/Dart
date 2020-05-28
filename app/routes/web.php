@@ -19,9 +19,18 @@ Route::get('/', function () {
 Route::get('/categories', function () {
     return view('categories');
 });
+
+
 Route::get('/blogs', function () {
     return view('blogArchive');
 });
+
+Route::get('/blogs/{slug}',function($slug){
+		return view('blogSingle');
+});
+
+
+
 Route::get('/products', function () {
     return view('products',['products' => null]);
 });
