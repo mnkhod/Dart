@@ -16,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/faq', function(){
+		return view('faq');
+});
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs');
+});
+
 Route::get('/categories', function () {
     return view('categories');
 });
@@ -40,19 +49,14 @@ Route::get('/products/{slug}',function($slug){
 });
 
 
-Route::get('/faq', function(){
-		return view('faq');
+Route::get('/players',function(){
+		return view('playersArchive');
 });
 
 
-
-
-Route::get('/aboutUs', function () {
-    return view('aboutUs');
+Route::get('/profile/cart',function(){
+		return view('cart');
 });
-
-
-
 
 
 
