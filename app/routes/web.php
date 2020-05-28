@@ -26,6 +26,10 @@ Route::get('/products', function () {
     return view('products',['products' => null]);
 });
 
+Route::get('/faq', function(){
+		return view('faq');
+});
+
 
 
 

@@ -1,9 +1,5 @@
 @extends('layouts.main')
 
-@section('link')
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-@endsection
-
 
 @section('content')
         <!-- Wrapper -->
