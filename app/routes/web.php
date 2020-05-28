@@ -14,10 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/products', function () {
+    return view('products',['products' => null]);
+});
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
