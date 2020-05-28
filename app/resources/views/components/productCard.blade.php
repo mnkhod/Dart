@@ -1,4 +1,4 @@
-<div class="c-products__items--item">
+
 		<div class="u-card">
 				<div class="u-card__content">
 						<div class="u-card__content--img">
@@ -37,4 +37,3 @@
 						<button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
 				</div>
 		</div>
-</div>
