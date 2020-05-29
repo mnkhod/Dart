@@ -72,26 +72,11 @@
                 <span class="u-semititle">Тамирчин</span>
             </h2>
             <div class="c-content__items">
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-silver">
-                        <img src="/img/New folder/scream1.png" alt="">
+                @for($i=0; $i<4; $i++)
+                    <div class="c-content__items--item">
+                        @include('components.playerCard')
                     </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-bronze">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-gold">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-gold">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
+                @endfor
             </div>
             <button class="u-button">Бүх тоглогчид харах</button>
         </div>
@@ -304,30 +289,4 @@
         </div>
     </div>
 
-@endsection
-
-
-@section('js')
-	<!-- Script -->
-	<script src="/script.js"></script>
-
-	<!-- Swiper JS -->
-	<script src="/swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-	    var swiper = new Swiper('.swiper-container', {
-	    spaceBetween: 30,
-	    effect: 'fade',
-	    loop: true,
-	    pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	    },
-	    navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	    },
-	    });
-	</script>
 @endsection

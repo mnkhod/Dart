@@ -59,6 +59,13 @@ Route::get('/profile/cart',function(){
 });
 
 
+Route::get('/profile/account',function(){
+    return view('account');
+});
+
+
+
+
 
 
 
