@@ -81,15 +81,14 @@
 			</div>
 			<div class="u-container2 c-single__tabs">
 					<div class="tabs">
-
 							<nav role='navigation' class="transformer-tabs">
 								<ul>
-									<li><a href="#tab-1" class="hoes active">Product Information</a></li>
-									<li><a href="#tab-2" class="hoes">Darts Technical Specification</a></li>
-									<li><a href="#tab-3" class="hoes">Darts Profile</a></li>
-									<li><a href="#tab-4" class="hoes">Darts Grip Characteristics</a></li>
-									<li><a href="#tab-5" class="hoes">Darts Finish</a></li>
-									<li><a href="#tab-6" class="hoes">General Information</a></li>
+									<li><a  class="hoes active">Product Information</a></li>
+									<li><a  class="hoes active">Darts Technical Specification</a></li>
+									<li><a  class="hoes">Darts Profile</a></li>
+									<li><a  class="hoes">Darts Grip Characteristics</a></li>
+									<li><a  class="hoes">Darts Finish</a></li>
+									<li><a  class="hoes">General Information</a></li>
 								</ul>
 							</nav>
 
@@ -113,7 +112,7 @@
 												</tr>
 									</table>
 							</div>
-							<div id="tab-2" class="hoes2">
+							<div id="tab-2" class="active hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>

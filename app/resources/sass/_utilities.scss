@@ -5,6 +5,12 @@
         $white-shade: #D8d8d8;
         $gray: #d8d8d8;
         $dark-gray: #707070;
+
+        // Fonts
+        @font-face {
+            font-family: 'Pe-icon-7-stroke';
+            src: url('/fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf');
+        }
         
                 // Utilities
         
@@ -76,7 +82,7 @@
         // Search
         .u-search{
             position: relative;
-            background: rgba(0, 0, 0, 0.377);
+            background: rgba(89, 88, 88, 0.36);
             width: 210px;
             height: 35px;
             border-radius: 22px;
@@ -93,6 +99,7 @@
                 border: none;
                 background: transparent;
                 color: white;
+                overflow: hidden;
             }
         }
         

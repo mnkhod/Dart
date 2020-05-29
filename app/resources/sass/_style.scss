@@ -1338,6 +1338,8 @@ html, body{
               padding: 0;
               margin: 0;
               border-bottom: 3px solid $gray;
+              display: flex;
+              align-items: center
             }
             li {
               display: inline-block;
@@ -1355,9 +1357,9 @@ html, body{
               color: $gray;
               text-decoration: none;
               padding: 0.5rem;
-              height: 58px;
               &:hover{
-                  color: rgb(46, 45, 45);
+                  color: $theme-red;
+                  cursor: pointer;
               }
               &.active {
                 border-bottom: 3px solid $theme-red;
@@ -2218,4 +2220,52 @@ footer{
             margin: 0;
         }
     }
+}
+
+
+
+// Blyat
+
+.slider-selection{
+    background-image: none !important;
+    background: $theme-red !important;
+}
+.slider-handle{
+    width: 13px !important;
+    height: 13px !important;
+    background-color: white !important;
+    border: 1px solid $theme-red !important;
+    background-image: none !important;
+}
+.slider.slider-horizontal .slider-track {
+    height: 4px !important;
+}
+.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y {
+    display: none !important;
+}
+
+.price-range-bt{
+    font-size: 0.85em;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0;
+}
+
+.vertical-nav-menu ul::before {
+    background: $theme-red !important;
+}
+
+.slider.slider-horizontal {
+    width: 150px !important;
+}
+
+.vertical-nav-menu ul > li > a:hover {
+    color: $theme-red !important;
+}
+
+.vertical-nav-menu li a:hover {
+    background: $theme-green;
 }
