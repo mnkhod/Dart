@@ -1,5 +1,4 @@
-@extends('layouts.main')
-
+@extends('layouts.home')
 @section('content')
     <!-- Swiper -->
     <div class="swiper-container">
@@ -47,42 +46,7 @@
 
 	      @for ($i=0;$i<8;$i++)
                 <div class="c-content__items--item">
-                    <div class="u-card">
-                        <div class="u-card__content">
-                            <div class="u-card__content--img">
-                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
-                            </div>
-                            <div class="u-card__content--img--hover">
-                                <div class="u-card__content--img--hover_box">
-                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
-                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
-                                </div>
-                                <div class="u-card__content--img--hover_box">
-                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
-                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
-                                </div>
-                                <div class="u-card__content--img--hover_box">
-                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
-                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="u-card__content--info">
-                                <div class="u-card__content--info_rating">
-                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
-                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
-                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
-                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
-                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
-                                </div>
-                                <h4>Барааны нэр</h4>
-                                <span id="p-type">Төрөл</span></br>
-                                <span id="p-price">150,000$</span>
-                                <span id="p-price_old">230,000$</span>
-                            </div>
-                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
-                        </div>
-                    </div>
+                    @include('components.productCard')
                 </div>
 	      @endfor
 
@@ -108,26 +72,11 @@
                 <span class="u-semititle">Тамирчин</span>
             </h2>
             <div class="c-content__items">
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-silver">
-                        <img src="/img/New folder/scream1.png" alt="">
+                @for($i=0; $i<4; $i++)
+                    <div class="c-content__items--item">
+                        @include('components.playerCard')
                     </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-bronze">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-gold">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
-                <div class="c-content__items--item">
-                    <div class="u-pcard a-gold">
-                        <img src="/img/New folder/scream1.png" alt="">
-                    </div>
-                </div>
+                @endfor
             </div>
             <button class="u-button">Бүх тоглогчид харах</button>
         </div>
@@ -340,30 +289,4 @@
         </div>
     </div>
 
-@endsection
-
-
-@section('js')
-	<!-- Script -->
-	<script src="/script.js"></script>
-
-	<!-- Swiper JS -->
-	<script src="/swiper.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-	    var swiper = new Swiper('.swiper-container', {
-	    spaceBetween: 30,
-	    effect: 'fade',
-	    loop: true,
-	    pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	    },
-	    navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	    },
-	    });
-	</script>
 @endsection

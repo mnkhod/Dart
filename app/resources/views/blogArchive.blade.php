@@ -8,8 +8,8 @@
 	            <h3>Үүнээс илүү бэлэг үгүй</h3>
 	            <button class="u-button">Дэлгэрэнгүй</button>
 	        </div>
-	    </div>
-			<div class="c-nav">
+	</div>
+	<div class="c-nav">
         <div class="c-nav__items">
             <div class="u-button2">
                 <a>Нийтлэл</a>
@@ -30,6 +30,7 @@
         </div>
     </div>
 		<div class="c-content">
+            @for($i=0; $i<4; $i++)
                 <div class="c-content__blogs">
                     <img class="a-imgshadow a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
                     <div class="c-content__blogs--img a-left">
@@ -70,126 +71,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="c-content__blogs">
-                    <img class="a-imgshadow a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    <div class="c-content__blogs--img a-right">
-                        <img class="scale-image a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    </div>
-                    <div class="c-content__blogs--info a-left">
-                        <div class="a-relative">
-                            <h4>Мэдээ</h4>
-                            <h2>Дартс гэж юу вэ?</h2>
-                            <p>sit impedit aliquid animi. Ea ipsa deleniti ut nulla commodi veritatis.</p>
-                            <div class="c-content__blogs--info--admin u-flex_wrap">
-                                <div class="c-content__blogs--info--admin_info">
-                                    <img src="/img/New folder/scream1.png" alt="">
-                                    <div>
-                                        <span>Админ</span></br>
-                                        <p>2020.02.02</p>
-                                    </div>
-                                </div>
-                                <div class="u-flex_between">
-                                    <a class="u-hover_icon">
-                                        <img src="/img/fb-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/twitter-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/instagram-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/youtube-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-content__blogs">
-                    <img class="a-imgshadow a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    <div class="c-content__blogs--img a-left">
-                        <img class="scale-image a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    </div>
-                    <div class="c-content__blogs--info a-right">
-                        <div class="a-relative">
-                            <h4>Мэдээ</h4>
-                            <h2>Дартс гэж юу вэ?</h2>
-                            <p>sit impedit aliquid animi. Ea ipsa deleniti ut nulla commodi veritatis.</p>
-                            <div class="c-content__blogs--info--admin u-flex_wrap">
-                                <div class="c-content__blogs--info--admin_info">
-                                    <img src="/img/New folder/scream1.png" alt="">
-                                    <div>
-                                        <span>Админ</span></br>
-                                        <p>2020.02.02</p>
-                                    </div>
-                                </div>
-                                <div class="u-flex_between">
-                                    <a class="u-hover_icon">
-                                        <img src="/img/fb-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/twitter-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/instagram-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/youtube-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-content__blogs">
-                    <img class="a-imgshadow a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    <div class="c-content__blogs--img a-right">
-                        <img class="scale-image a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                    </div>
-                    <div class="c-content__blogs--info a-left">
-                        <div class="a-relative">
-                            <h4>Мэдээ</h4>
-                            <h2>Дартс гэж юу вэ?</h2>
-                            <p>sit impedit aliquid animi. Ea ipsa deleniti ut nulla commodi veritatis.</p>
-                            <div class="c-content__blogs--info--admin u-flex_wrap">
-                                <div class="c-content__blogs--info--admin_info">
-                                    <img src="/img/New folder/scream1.png" alt="">
-                                    <div>
-                                        <span>Админ</span></br>
-                                        <p>2020.02.02</p>
-                                    </div>
-                                </div>
-                                <div class="u-flex_between">
-                                    <a class="u-hover_icon">
-                                        <img src="/img/fb-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/twitter-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/instagram-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                    </a>
-                                    <a class="u-hover_icon">
-                                        <img src="/img/youtube-red.png" alt="">
-                                        <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            @endfor
+
+            <!-- Apparently, this is a fucking mobile versioun of blogs, which makes me lose my shit and do double the work -->
+            @for($i=0; $i<4; $i++)
                 <div class="c-content__blogs2">
                     <div class="c-content__blogs2--single">
                         <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
@@ -223,132 +108,14 @@
                         <p class="c-content__blogs2--single--name">Овог Админ</p>
                     </div>
                 </div>
-                <div class="c-content__blogs2">
-                    <div class="c-content__blogs2--single">
-                        <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                        <div class="c-content__blogs2--single--info">
-                            <div class="u-flex_between">
-                                <h4>Мэдээ</h4>
-                                <span>2020.20.20</span>
-                            </div>
-                            <h3>Дартс гэж юу вэ?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="c-content__blogs2--single--info--social u-flex_between">
-                                <a class="u-hover_icon">
-                                    <img src="/img/fb-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/twitter-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/instagram-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/youtube-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <img class="c-content__blogs2--single--author" src="/img/New folder/scream1.png" alt="">
-                        <p class="c-content__blogs2--single--name">Овог Админ</p>
-                    </div>
-                </div>
-                <div class="c-content__blogs2">
-                    <div class="c-content__blogs2--single">
-                        <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                        <div class="c-content__blogs2--single--info">
-                            <div class="u-flex_between">
-                                <h4>Мэдээ</h4>
-                                <span>2020.20.20</span>
-                            </div>
-                            <h3>Дартс гэж юу вэ?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="c-content__blogs2--single--info--social u-flex_between">
-                                <a class="u-hover_icon">
-                                    <img src="/img/fb-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/twitter-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/instagram-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/youtube-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <img class="c-content__blogs2--single--author" src="/img/New folder/scream1.png" alt="">
-                        <p class="c-content__blogs2--single--name">Овог Админ</p>
-                    </div>
-                </div>
-                <div class="c-content__blogs2">
-                    <div class="c-content__blogs2--single">
-                        <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-                        <div class="c-content__blogs2--single--info">
-                            <div class="u-flex_between">
-                                <h4>Мэдээ</h4>
-                                <span>2020.20.20</span>
-                            </div>
-                            <h3>Дартс гэж юу вэ?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <div class="c-content__blogs2--single--info--social u-flex_between">
-                                <a class="u-hover_icon">
-                                    <img src="/img/fb-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/twitter-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/instagram-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
-                                </a>
-                                <a class="u-hover_icon">
-                                    <img src="/img/youtube-red.png" alt="">
-                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <img class="c-content__blogs2--single--author" src="/img/New folder/scream1.png" alt="">
-                        <p class="c-content__blogs2--single--name">Овог Админ</p>
-                    </div>
-                </div>
-    </div>
+            @endfor
+        </div>
 		<div class="c-content">
-        <div class="c-content__nav">
-            <div class="c-content__nav--navigation">
-                <span class="material-icons">
-                    chevron_left
-                </span>
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <span class="material-icons">
-                    chevron_right
-                </span>
+            <div class="c-content__nav">
+                <div class="c-content__nav--navigation">
+                </div>
             </div>
         </div>
-    </div>
-		<div class="u-fixedfilter">
-		        <span class="material-icons">
-		            filter_list
-		            </span>
-		        <a>
-		            Filter
-		        </a>
-		    </div>
 
 @endsection
-@section('js')
-	<script src="/script.js"></script>
-@endsection
+

@@ -22,8 +22,8 @@
 													<div class="swiper-slide"><img src="/img/New folder/baraa-6.png" alt=""></div>
 													</div>
 													<!-- Add Arrows -->
-													<div class="swiper-button-next"></div>
-													<div class="swiper-button-prev"></div>
+													<div class="swiper-button-next theme-red"></div>
+													<div class="swiper-button-prev theme-red"></div>
 											</div>
 							</div>
 					</div>
@@ -81,19 +81,18 @@
 			</div>
 			<div class="u-container2 c-single__tabs">
 					<div class="tabs">
-
 							<nav role='navigation' class="transformer-tabs">
 								<ul>
-									<li><a href="#tab-1" class="active">Product Information</a></li>
-									<li><a href="#tab-2">Darts Technical Specification</a></li>
-									<li><a href="#tab-3">Darts Profile</a></li>
-									<li><a href="#tab-4">Darts Grip Characteristics</a></li>
-									<li><a href="#tab-5">Darts Finish</a></li>
-									<li><a href="#tab-6">General Information</a></li>
+									<li><a  class="hoes active">Product Information</a></li>
+									<li><a  class="hoes active">Darts Technical Specification</a></li>
+									<li><a  class="hoes">Darts Profile</a></li>
+									<li><a  class="hoes">Darts Grip Characteristics</a></li>
+									<li><a  class="hoes">Darts Finish</a></li>
+									<li><a  class="hoes">General Information</a></li>
 								</ul>
 							</nav>
 
-							<div id="tab-1" class="active">
+							<div id="tab-1" class="active hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -113,8 +112,7 @@
 												</tr>
 									</table>
 							</div>
-
-							<div id="tab-2">
+							<div id="tab-2" class="active hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -134,8 +132,7 @@
 												</tr>
 									</table>
 							</div>
-
-							<div id="tab-3">
+							<div id="tab-3" class="hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -155,7 +152,7 @@
 												</tr>
 									</table>
 							</div>
-							<div id="tab-4">
+							<div id="tab-4" class="hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -175,7 +172,7 @@
 												</tr>
 									</table>
 							</div>
-							<div id="tab-5">
+							<div id="tab-5" class="hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -195,7 +192,7 @@
 												</tr>
 									</table>
 							</div>
-							<div id="tab-6">
+							<div id="tab-6" class="hoes2">
 									<table style="width:100%">
 											<tr>
 												<th>Darts</th>
@@ -224,158 +221,11 @@
 			<div class="u-container2 c-single__items">
 					<h5>Төстэй бараанууд</h5>
 					<div class="c-content__items">
+						@for($i=0; $i<4; $i++)
 							<div class="c-content__items--item">
-									<div class="u-card">
-											<div class="u-card__content">
-													<div class="u-card__content--img">
-															<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-															<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
-													</div>
-													<div class="u-card__content--img--hover">
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
-															</div>
-													</div>
-													<div class="u-card__content--info">
-															<div class="u-card__content--info_rating">
-																	<i class="fa fa-star rating1" aria-hidden="true"></i>
-																	<i class="fa fa-star rating2" aria-hidden="true"></i>
-																	<i class="fa fa-star rating3" aria-hidden="true"></i>
-																	<i class="fa fa-star rating4" aria-hidden="true"></i>
-																	<i class="fa fa-star rating5" aria-hidden="true"></i>
-															</div>
-															<h4>Барааны нэр</h4>
-															<span id="p-type">Төрөл</span></br>
-															<span id="p-price">150,000$</span>
-															<span id="p-price_old">230,000$</span>
-													</div>
-													<button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
-											</div>
-									</div>
+								@include('components.productCard')
 							</div>
-							<div class="c-content__items--item">
-									<div class="u-card">
-											<div class="u-card__content">
-													<div class="u-card__content--img">
-															<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-															<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
-													</div>
-													<div class="u-card__content--img--hover">
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
-															</div>
-													</div>
-													<div class="u-card__content--info">
-															<div class="u-card__content--info_rating">
-																	<i class="fa fa-star rating1" aria-hidden="true"></i>
-																	<i class="fa fa-star rating2" aria-hidden="true"></i>
-																	<i class="fa fa-star rating3" aria-hidden="true"></i>
-																	<i class="fa fa-star rating4" aria-hidden="true"></i>
-																	<i class="fa fa-star rating5" aria-hidden="true"></i>
-															</div>
-															<h4>Барааны нэр</h4>
-															<span id="p-type">Төрөл</span></br>
-															<span id="p-price">150,000$</span>
-															<span id="p-price_old">230,000$</span>
-													</div>
-													<button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
-											</div>
-									</div>
-							</div>
-							<div class="c-content__items--item">
-									<div class="u-card">
-											<div class="u-card__content">
-													<div class="u-card__content--img">
-															<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-															<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
-													</div>
-													<div class="u-card__content--img--hover">
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
-															</div>
-													</div>
-													<div class="u-card__content--info">
-															<div class="u-card__content--info_rating">
-																	<i class="fa fa-star rating1" aria-hidden="true"></i>
-																	<i class="fa fa-star rating2" aria-hidden="true"></i>
-																	<i class="fa fa-star rating3" aria-hidden="true"></i>
-																	<i class="fa fa-star rating4" aria-hidden="true"></i>
-																	<i class="fa fa-star rating5" aria-hidden="true"></i>
-															</div>
-															<h4>Барааны нэр</h4>
-															<span id="p-type">Төрөл</span></br>
-															<span id="p-price">150,000$</span>
-															<span id="p-price_old">230,000$</span>
-													</div>
-													<button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
-											</div>
-									</div>
-							</div>
-							<div class="c-content__items--item">
-									<div class="u-card">
-											<div class="u-card__content">
-													<div class="u-card__content--img">
-															<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-															<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
-													</div>
-													<div class="u-card__content--img--hover">
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
-															</div>
-															<div class="u-card__content--img--hover_box">
-																	<img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
-																	<img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
-															</div>
-													</div>
-													<div class="u-card__content--info">
-															<div class="u-card__content--info_rating">
-																	<i class="fa fa-star rating1" aria-hidden="true"></i>
-																	<i class="fa fa-star rating2" aria-hidden="true"></i>
-																	<i class="fa fa-star rating3" aria-hidden="true"></i>
-																	<i class="fa fa-star rating4" aria-hidden="true"></i>
-																	<i class="fa fa-star rating5" aria-hidden="true"></i>
-															</div>
-															<h4>Барааны нэр</h4>
-															<span id="p-type">Төрөл</span></br>
-															<span id="p-price">150,000$</span>
-															<span id="p-price_old">230,000$</span>
-													</div>
-													<button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
-											</div>
-									</div>
-							</div>
+						@endfor
 					</div>
 			</div>
 			<div class="u-container2 c-single__comments">
@@ -463,30 +313,6 @@
 @endsection
 
 @section('js')
-	<!-- Script -->
-	<script src="/script.js"></script>
-		<!-- Swiper JS -->
-		<script src="/swiper.min.js"></script>
-
-		<!-- Materialize -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-	<!-- Initialize Swiper -->
-	<script>
-			var swiper = new Swiper('.swiper-container', {
-			slidesPerView: 3,
-			spaceBetween: 30,
-			slidesPerGroup: 1,
-			loop: true,
-			loopFillGroupWithBlank: true,
-			pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-			},
-			navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-			},
-			});
-</script>
+<script src="/js/mytabs.js"></script>
 @endsection
+
