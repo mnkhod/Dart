@@ -65,6 +65,10 @@ Route::get('/profile/account',function(){
 
 
 
+Route::get('/logout',function(){
+  Auth::logout();
+  return redirect('/');
+});
 
 
 
