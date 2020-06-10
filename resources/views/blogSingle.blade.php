@@ -65,7 +65,7 @@
 					<div class="u-flex_wrap" style="width: 100%;">
 						@for($i=0; $i<4; $i++)
 							<div class="c-blogsingle__right--card">
-									@include('blogCard')
+									@include('components.blogCard')
 							</div>
 						@endfor
 					</div>
