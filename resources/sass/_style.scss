@@ -35,7 +35,7 @@ html, body{
                     content: "\f107";
                     font-family: fontawesome;
                     margin-left: .3em;
-                    margin-top: .2em;
+                    margin-top: .1em;
                 }
             }
             li:hover{
@@ -156,8 +156,8 @@ html, body{
             padding: 1.35em 0;
             img{
                 left: 0;
-                width: 50px;
-                height: 50px;
+                width: 45px;
+                height: 45px;
             }
         }
     }
@@ -180,6 +180,20 @@ html, body{
         }
     }
 }
+
+main{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+body{
+    padding-bottom: 451px;
+    @media screen and (max-width: 1024px){
+        padding-bottom: 0;
+    }
+}
+
 // Swiper
 .swiper-slide{
     .slider-info{
@@ -249,9 +263,12 @@ html, body{
     position: relative;
     width: 100%;
     text-align: center; 
+    background: #fff;
+    z-index: 1;
+    padding-top: 64px;
+    padding-bottom: 25px;
     h2{
         position: relative;
-        margin-top: 64px;
         font-size: 60px;
         font-weight: 300;
     }
@@ -691,7 +708,6 @@ html, body{
 .c-rapper{
     display: flex;
     width: 100%;
-    background-image: url();
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -699,7 +715,8 @@ html, body{
     height: 40vw;
     color: white;
     position: relative;
-    margin-top: 25px;
+    background-color: #fff;
+    z-index: 1;
     &__info{
         width: 86%;
         margin: auto;
@@ -810,6 +827,7 @@ html, body{
 
 .c-rapper2{
     display: flex;
+    z-index: 1;
     width: 100%;
     background-image: url(img/Untitled-4.png);
     background-repeat: no-repeat;
@@ -818,7 +836,6 @@ html, body{
     height: 36vw;
     color: white;
     position: relative;
-    margin-bottom: 10vw;
     box-shadow: 0 2px 5px rgba(128, 128, 128, 0.486);
     &__info{
         width: 86%;
@@ -1358,7 +1375,7 @@ html, body{
               text-decoration: none;
               padding: 0.5rem;
               &:hover{
-                  color: $theme-red;
+                  color: $theme-red !important;
                   cursor: pointer;
               }
               &.active {
@@ -1366,6 +1383,7 @@ html, body{
                 position: relative;
                 bottom: -3px;
                 display: inline-block !important;
+                height: 67px;
               }
             }
             @media (max-width: 700px) {
@@ -1783,7 +1801,7 @@ html, body{
 
 // About us
 .c-about{
-    margin: 6em 0;
+    padding: 6em 0;
     .c-about__left{
         width: 70%;
         h2{
@@ -2102,10 +2120,104 @@ html, body{
     }
 }
 
+// Account Header
+.c-accheader{
+    position: relative;
+    width: 96%;
+    height: 7vw;
+    margin: 2em 2%;
+    top: 30px;
+    $accheader-shadow: rgba(63, 63, 63, 0.425);
+    img{
+        padding: 1em;
+        width: 4em;
+        height: 4em;
+    }
+    a{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.2em;
+        color: white !important;
+    }
+    &__main{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $theme-red;
+        border-radius: 2em;
+        box-shadow: 0 0 10px $accheader-shadow;
+        display: flex;
+        align-items: center;
+    }
+    &__pass{
+        position: absolute;
+        width: 75%;
+        border-radius: 2em;
+        top: 0;
+        left: 25%;
+        background-color: $theme-red;
+        filter: brightness(120%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+    &__cart{
+        position: absolute;
+        width: 50%;
+        border-radius: 2em;
+        top: 0;
+        left: 50%;
+        background-color: $theme-red;
+        filter: brightness(140%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+    &__queue{
+        position: absolute;
+        top: 0;
+        width: 25%;
+        right: 0;
+        border-radius: 2em;
+        background-color: $theme-red;
+        filter: brightness(160%);
+        box-shadow: 0 0 10px $accheader-shadow;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Footer
 footer{
     background: $footer-bg;
+    @media screen and (min-width: 1024px){
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }
 .c-footer{
     &__content{
@@ -2269,3 +2381,310 @@ footer{
 .vertical-nav-menu li a:hover {
     background: $theme-green;
 }
+
+    /*<<<<<<<<<<<<<<<<uuganaa css start>>>>>>>>>>>>>>>>>>*/
+    .sticky-filter-mphone{
+        position:-webkit-sticky;
+        position: fixed;
+        bottom: 0;
+        background-color: $theme-red;
+        font-size: 20px;
+        z-index: 100;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        @media screen and (min-width: 600px){
+            display: none !important;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+      }
+  
+      .sticky-filter-hover{
+        margin-bottom: 23px;
+        position:-webkit-sticky;
+        position: fixed;
+        bottom: 0;
+        background-color: $theme-red;
+        font-size: 20px;
+        z-index: 99;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+  
+        @media screen and (min-width: 600px){
+            display: none !important;
+        }
+      }
+      .sticky-filter-nav{
+        font-family: Arial, Helvetica, sans-serif;
+          height:160px;
+          position: relative;
+          width:100%;
+          overflow:hidden;
+          overflow-y:scroll;
+      }
+      .sticky-filter-list{
+  
+        position:-webkit-sticky;
+        position: relative;
+        bottom: 0;
+        background-color: white;
+        font-size: 45px;
+        z-index: 100;
+        width: 100%;
+        text-align: center;
+        color:black ;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 14px;
+  
+      }
+      .icon-with-hover{
+        position: relative;
+      }
+      .icon-with-hover:hover .bag-hover-container{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-65%);
+        transition: ease-in-out .3s;
+        @media screen and (max-width: 600px){
+            transform: translateX(-81%);
+        }
+      }
+
+      .icon-with-hover1{
+        position: relative;
+
+      }
+      .icon-with-hover1:hover .bag-hover-container1{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-75%);
+        transition: ease-in-out .3s;
+        @media screen and (max-width: 600px){
+            transform: translateX(-89%);
+        }
+      }
+
+
+
+  .icon-with-hover,
+  .icon-with-hover1{
+
+      .bag-hover-container{
+       font-family: Arial, Helvetica, sans-serif;
+       width: 320px;
+       height: 280px;
+       position: absolute;
+       background-color: $theme-red;
+       color: white;
+       text-align: center;
+       border-radius: 30px ;
+       font-size: 10px;
+       left: 50%;
+       transform: translateX(0);
+       margin-top: 16px;
+       visibility: hidden;
+       opacity: 0;
+       transition: ease-in-out .3s;
+      }
+      .bag-hover-container h3{
+        font-size: 18px;
+        padding: 0.6em;
+        margin-bottom: 0;
+      }
+  
+      .inner-bag-hover{
+        color: black; 
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: white;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        font-size: 15px;
+      }
+      .inner-bag-hover ul{
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+  
+      }
+      .inner-bag-hover h4{
+        padding: 6px 0;
+        font-size: 1.1em;
+        box-shadow: 0 2px 1px rgb(182, 182, 182);
+      }
+      .inner-bag-hover li{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 6px 0;
+      }      
+  
+      .inner-bag-hover-tprice{
+        position: relative;
+        width: 100%;
+        background-color: rgb(211, 201, 201);
+        padding: 5px 0;
+      }
+      .inner-bag-hover p{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      .inner-bag-hover-product h6{
+        margin-bottom: 4px;
+      }
+      .inner-bag-hover img{
+        width: 63px;
+        height: 63px;
+        margin-left: 0;
+        border-radius: 10px;
+      }
+      .purchase-section{
+        display: flex;
+        justify-content: center;
+      }
+      .u-button_red{
+        margin: 9px 0 0 8px;
+        border-radius: 11px;
+        padding: 5px 5px;
+      }
+      .u-button{
+        margin: 9px 8px 0 0;
+        border-radius: 11px;
+        padding: 5px 5px;
+      }
+      .u-button_red-c {
+        cursor: pointer;
+        font-weight: 700;
+        position: relative;
+        border-radius: 10px;
+        line-height: 1;
+        vertical-align: -10%;
+        transition: all 500ms ease;
+        color: white;
+        background-color: $theme-red;
+        border: 2px solid $theme-red;
+        height: 28px;
+        margin-top: 16px;   }
+  
+        .u-button_red-c a {
+          text-decoration: none;
+          color: inherit; }
+  
+      .u-button_red-c:hover {
+        color: $theme-red;
+        background-color: transparent;
+        transition: all 500ms ease; }
+  
+        .inner-bag-hover1{
+          color: black; 
+          width: 100%;
+          height: 100%;
+          position: relative;
+          background-color: white;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          form{
+              padding: 0;
+          }
+        }
+
+        .bag-hover-container1{
+          font-family: Arial, Helvetica, sans-serif;
+          width: 285px;
+          height: 260px;
+          position: absolute;
+          background-color: $theme-red;
+          color: white;
+          text-align: center;
+          border-radius: 30px ;
+          visibility: hidden;
+          margin-top: 16px;
+          left: 50%;
+          opacity: 0;
+          transform: translateX(0);
+          transition: ease-in-out .3s;
+         }
+  
+         .bag-hover-container1 h3{
+            font-size: 20px;
+            margin: 8px 0;
+         }
+         .in-one-row{
+           margin-top: 15px;
+           display: flex;
+           font-size: 15px;
+           justify-content: space-around; 
+         }
+  
+         input[type=text], input[type=password] {
+          width: 100%;
+          padding: 8px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          font-size: 16px;
+        }
+  
+        .u-button_red-login {
+          margin-top: 20px;
+          width: 70%;
+          height: 30%;
+          cursor: pointer;
+          font-weight: 600;
+          position: relative;
+          border-radius: 10px;
+          line-height: 1;
+          vertical-align: -10%;
+          transition: all 500ms ease;
+          color: white;
+          background-color: $theme-red;
+          border: 2px solid $theme-red; 
+          padding: 10px;
+          border-radius: 20px;
+          font-size: 16px;
+        }
+  
+          .u-button_red-login a {
+            text-decoration: none;
+            color: inherit; 
+            border-radius: 20px;
+          }
+  
+        .u-button_red-login:hover {
+          color: $theme-red;
+          background-color: transparent;
+          transition: all 500ms ease;
+          border-radius: 20px;
+            font-size: 16px;
+         }
+  
+        .login-container {
+          padding: 16px;
+        }
+  
+        .able-to-scroll ul{
+          font-family: Arial, Helvetica, sans-serif;
+          height:160px;
+          position: relative;
+          width:100%;
+          overflow:hidden;
+          overflow-y:scroll;
+          margin-bottom: 0 !important;
+          flex-direction: column;
+        }
+  
+        }
+  
+  
+      /*<<<<<<<<<<<<<<<<uuganaa css end>>>>>>>>>>>>>>>>>>*/

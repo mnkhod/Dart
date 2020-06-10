@@ -22,45 +22,38 @@
 												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
 												<i class="fas fa-plus-circle"></i>
 										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
+										<p class="answer">Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
 								</li>
 								<li>
 										<div class="u-flex_between">
 												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
 												<i class="fas fa-plus-circle"></i>
 										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
+										<p class="answer">Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
 								</li>
 								<li>
 										<div class="u-flex_between">
 												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
 												<i class="fas fa-plus-circle"></i>
 										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
+										<p class="answer">Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
 								</li>
 								<li>
 										<div class="u-flex_between">
 												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
 												<i class="fas fa-plus-circle"></i>
 										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
+										<p class="answer">Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
 								</li>
 								<li>
 										<div class="u-flex_between">
 												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
 												<i class="fas fa-plus-circle"></i>
 										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
-								</li>
-								<li>
-										<div class="u-flex_between">
-												<span>Асуулт бла Postitis  бла Postitisбла Postббла Postitisла Postitisitis</span>
-												<i class="fas fa-plus-circle"></i>
-										</div>
-										<p>Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
+										<p class="answer">Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь Хариулт аа ав пэтка минь</p>
 								</li>
 						</ul>
-						<div class="c-content">
+						<div class="c-content pt-0">
 								<div class="c-content__nav full">
 										<div class="c-content__nav--navigation">
 												<span class="material-icons">

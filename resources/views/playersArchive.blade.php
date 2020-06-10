@@ -30,7 +30,7 @@
 					</div>
 			</div>
 			<div class="c-products__items u-flex_wrap mt-2">
-				@for ($i=0; $i<8; $i++)
+				@for($i=0; $i<8; $i++)
 					<div class="c-products__items--item">
 						@include('components.playerCard')
 					</div>

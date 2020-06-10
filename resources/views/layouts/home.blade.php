@@ -6,6 +6,9 @@
 
        <!-- CSS -->
        <link rel="stylesheet" href="/css/app.css">
+       <link rel="stylesheet" href="/css/yolo.css">
+	    <link rel="stylesheet" href="/css/header.css">
+	    <link rel="stylesheet" href="/css/countdown.css">
 
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="/css/swiper.min.css">
@@ -29,13 +32,34 @@
 </head>
 <body>
 
-<header>
+<header class="home-header">
         <div class="c-header u-flex_between" style="box-shadow: none;">
             <!-- PC Header -->
             <div class="c-header__left u-flex_between">
                 <img src="img/dats.png" alt="Company Logo">
                 <ul class="c-header__left--menu u-flex_between">
-                    <li class="u-hover_main"><a>Нүүр</a></li>
+                    <li class="u-hover_main home-dropdown">
+						<a>Нүүр</a>
+						<div class="home-dropdown__tab">
+							<ol>
+								<li>
+									<a href="">
+										Naachin chi hugshuun
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Bawaltsah bandi bnu
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Chinii durtai awga ah
+									</a>
+								</li>
+							</ol>
+						</div>
+                    </li>
                     <li class="u-hover_main a-slow"><a>Бүтээгдэхүүн</a></li>
                     <li class="u-hover_main"><a>Блог</a></li>
                     <li class="u-hover_main"><a>Тоглогчид</a></li>
@@ -106,15 +130,124 @@
                     <img src="img/search-white.png" alt="Search Icon">
                     <input type="text" placeholder="Хайх зүйлээ оруулна уу...">
                 </form>
-                <img src="img/shopping-bag-6.png" alt="">
-                <img src="img/account1.png" alt="">
+                <div class="icon-with-hover">
+								<img src="/img/shopping-bag-6.png" alt="">
+								<div class="bag-hover-container">
+									<h3>Таны сагсанд байгаа бараанууд</h3>
+
+									<div class="inner-bag-hover">
+										<h4>Хэрэглэгчийн нэр</h4>
+									<nav class="able-to-scroll">	
+										<ul>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+											<li><img src="/img/shopping-bag-53.png" alt="">
+												<div class="inner-bag-hover-product ">
+													<h6>Барааны нэр</h6>
+													<div class="c-single__info--quan quantity">
+														<input type="number" min="0" max="99" step="1" value="1">
+														<div class="c-single__info--quan_i">
+															<i class="fas fa-plus-square"></i>
+															<i class="fas fa-minus-square"></i>
+														</div>
+													</div>
+												</div>
+												<p>150'000</p>	
+												<button type="button" class="u-button_red-c">Хасах</button>
+											</li>
+										</ul>
+									</nav>	
+										<div class="inner-bag-hover-tprice">Нийт дүн:300'000</div>
+										<div class="purchase-section">
+											<div class="u-button">Сагс руу очих</div>
+											<div class="u-button_red">Сагс хоослох</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="icon-with-hover1">
+								<img src="/img/account1.png" alt="">
+								<div class="bag-hover-container1">
+									<h3>Нэвтрэх</h3>
+									<div class="inner-bag-hover1">
+										<form action="/action_page.php" method="post">
+
+											<div class="login-container">
+
+												<input type="text" placeholder="Хэрэглэгчийн нэр" name="uname" required>
+												<input type="password" placeholder="Нууц үг" name="psw" required>
+												<div class="in-one-row"> 
+													<label><input type="checkbox" checked="checked" name="remember"> Намайг сана</label>
+													<span class="psw"><a href="#">Нууц үг мартсан</a></span>
+												</div>
+											<button class="u-button_red-login" type="submit">Нэвтрэх</button>									
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
             </div>
         </div>
     </header>
 
 
 
-@yield('content')
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>@yield('content')</main>
 
 <footer>
     <div class="c-footer u-container">
@@ -195,7 +328,13 @@
 <script src="/js/script.js"></script>
 <script src="/js/swiper.min.js"></script>
 
-
+<!-- Header sticky -->
+        <script type="text/javascript">
+			  window.addEventListener("scroll", function(){
+				  var header = document.querySelector("header");
+				  header.classList.toggle("sticky", window.scrollY > 0);
+			  })
+        </script>
 
 <!-- Initialize Swiper -->
 <script>

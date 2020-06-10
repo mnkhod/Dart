@@ -38,8 +38,6 @@ Route::get('/blogs/{slug}',function($slug){
 		return view('blogSingle');
 });
 
-
-
 Route::get('/products', function () {
     return view('products',['products' => null]);
 });

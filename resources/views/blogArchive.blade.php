@@ -24,12 +24,12 @@
                     filter_list
                     </span>
                 <a>
-                    2020 оны 2 сар
+                    2020 оны 6 сар
                 </a>
             </div>
         </div>
     </div>
-		<div class="c-content">
+		<div class="c-content pt-0">
             @for($i=0; $i<4; $i++)
                 <div class="c-content__blogs">
                     <img class="a-imgshadow a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">

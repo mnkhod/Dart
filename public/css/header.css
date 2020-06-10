@@ -1,0 +1,92 @@
+.home-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 0.6s;
+    z-index: 100000;
+  }
+  .home-header .logo{
+    position: relative;
+    font-weight: 700;
+    color:#fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+  
+  .home-header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-header ul li{
+    position: relative;
+    list-style: none;
+  }
+  
+  .home-header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+    transition: 0.6s;
+  }
+  .banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(darts.png);
+    background-size: cover;
+  }
+  
+  .home-header.sticky{
+    padding: 50px 0;
+    background: rgb(36, 36, 36, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+  }
+  @media screen and (max-width: 992px){
+    .home-header.sticky{
+      padding: 35px 0;
+    }
+  }
+
+  .other-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    transition: 0.6s;
+    z-index: 100000;
+  }
+
+  .other-header.sticky{
+    background: rgba(255, 255, 255);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    z-index: 100000;
+  }
+  .other-header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+  }

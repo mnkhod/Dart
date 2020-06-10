@@ -12,7 +12,7 @@
             src: url('/fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf');
         }
         
-                // Utilities
+        // Utilities
         
         // Flex
         .u-flex_wrap{
@@ -83,7 +83,7 @@
         .u-search{
             position: relative;
             background: rgba(89, 88, 88, 0.36);
-            width: 210px;
+            width: 230px;
             height: 35px;
             border-radius: 22px;
             img{
@@ -100,6 +100,8 @@
                 background: transparent;
                 color: white;
                 overflow: hidden;
+                font-size: 0.9em;
+                margin-left: -8px;
             }
         }
         
@@ -538,7 +540,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 85%;
+                height: 79%;
                 border-radius: 24px;
                 overflow: hidden;
                 background-color: $dark-gray;
@@ -717,6 +719,60 @@
         .show{
             display: block !important;
         }
+
+
+        .home-dropdown{
+            position: relative;
+            &__tab{
+                width: 500px;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                box-shadow: 0 0 3px rgb(212, 212, 212);
+                z-index: 10;
+                background: #fff;
+                transition: ease .3s;
+                visibility: hidden;
+                opacity: 0;
+                ol{
+                    padding: 5%;
+                    li{
+                        margin-bottom: 1em;
+                        a{
+                            color: black !important;
+                            font-weight: 400;
+                        }
+                        a::after{
+                            display: none;
+                        }
+                    }
+                    li:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:hover &__tab{
+                transition: ease .3s;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+
+        .font-control{
+            .sale-information{
+                font-size: 0.8vw;
+                @media screen and (max-width: 992px){
+                    font-size: 1.2vw;
+                }
+                @media screen and (max-width: 800px){
+                    font-size: 1.5vw;
+                }
+                @media screen and (max-width: 800px){
+                    font-size: 2.4vw;
+                }
+            }
+        }
         
         
         
@@ -758,11 +814,17 @@
         .a-right{
             right: 0;
         }
-        
+        .mt-100{
+            margin-top: 100px;
+        }
+
         // Article Landing
         .a-article{
             height: calc(100vh - 100px);
             margin: 0;
+        }
+        .a-article:first-child{
+            margin-top: 100px;
         }
         
         .black{
@@ -782,11 +844,19 @@
         .mb-2{
             margin-bottom: 36px;
         }
+
+        .pt-0{
+            padding-top: 0;
+        }
         
         .a-redspacing{
             width: 100%;
             height: 200px;
             background: $theme-red;
+            margin-top: 100px;
+        }
+        .answer{
+            margin-bottom: 0 !important;
         }
         
         

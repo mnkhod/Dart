@@ -2,8 +2,17 @@
 		<div class="u-card">
 				<div class="u-card__content">
 						<div class="u-card__content--img">
-								<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
-								<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+							<img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+							<img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+							<img class="sale-countdown" src="/img/countdown.png" alt="">
+                            <div class="sale-information">
+                                <h5>Хямдрал дуусахад:</h5>
+                                <span>00X</span>
+                                <span id="days">@hour</span>
+                                <span id="hour">00</span>
+                                <span id="minute">00</span>
+                                <span id="seconds">00</span>
+                            </div>
 						</div>
 						<div class="u-card__content--img--hover">
 								<div class="u-card__content--img--hover_box">

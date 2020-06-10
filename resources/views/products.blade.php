@@ -205,7 +205,7 @@
 		            </div>
 		            <div class="c-products__items u-flex_wrap">
 						@for ($i=0;$i<19;$i++)
-							<div id="singleProduct" class="c-products__items--item">
+							<div id="singleProduct" class="c-products__items--item font-control">
 								@include('components.productCard',['p' => $products ])
 							</div>
 						@endfor

@@ -1,0 +1,45 @@
+.sale-countdown{
+    top: 61% !important;
+    width: 82% !important;
+    height: 25% !important;
+}
+.sale-information{
+    position: absolute;
+    bottom: 17%;
+    z-index: 10;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 600;
+    left: 29%;
+} 
+@media screen and (max-width: 1024px){
+    .sale-information{
+        font-size: 1.7vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .sale-information{
+        font-size: 2.4vw;
+    }
+}
+
+
+
+.sale-countdown,
+.sale-information{
+    opacity: 1;
+    visibility: visible;
+    transition: ease .2s;
+}
+
+.sale-information h5{
+    margin: 0;
+    font-size: 1em !important;
+}
+.u-card:hover .sale-information,
+.u-card:hover .sale-countdown{
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    transition: ease .2s;
+}

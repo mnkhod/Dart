@@ -84,7 +84,7 @@
 							<nav role='navigation' class="transformer-tabs">
 								<ul>
 									<li><a  class="hoes active">Product Information</a></li>
-									<li><a  class="hoes active">Darts Technical Specification</a></li>
+									<li><a  class="hoes">Darts Technical Specification</a></li>
 									<li><a  class="hoes">Darts Profile</a></li>
 									<li><a  class="hoes">Darts Grip Characteristics</a></li>
 									<li><a  class="hoes">Darts Finish</a></li>
@@ -112,10 +112,10 @@
 												</tr>
 									</table>
 							</div>
-							<div id="tab-2" class="active hoes2">
+							<div id="tab-2" class="hoes2">
 									<table style="width:100%">
 											<tr>
-												<th>Darts</th>
+												<th>Tab 2</th>
 												<td>x3 Darts per set</td>
 											</tr>
 											<tr>
@@ -135,7 +135,7 @@
 							<div id="tab-3" class="hoes2">
 									<table style="width:100%">
 											<tr>
-												<th>Darts</th>
+												<th>Tab 3</th>
 												<td>x3 Darts per set</td>
 											</tr>
 											<tr>
@@ -155,7 +155,7 @@
 							<div id="tab-4" class="hoes2">
 									<table style="width:100%">
 											<tr>
-												<th>Darts</th>
+												<th>Tab 4</th>
 												<td>x3 Darts per set</td>
 											</tr>
 											<tr>
@@ -175,7 +175,7 @@
 							<div id="tab-5" class="hoes2">
 									<table style="width:100%">
 											<tr>
-												<th>Darts</th>
+												<th>Tab 5</th>
 												<td>x3 Darts per set</td>
 											</tr>
 											<tr>
@@ -195,7 +195,7 @@
 							<div id="tab-6" class="hoes2">
 									<table style="width:100%">
 											<tr>
-												<th>Darts</th>
+												<th>Tab 6</th>
 												<td>x3 Darts per set</td>
 											</tr>
 											<tr>
