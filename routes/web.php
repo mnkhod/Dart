@@ -21,7 +21,7 @@ Route::get('/', function () {
   $players = Player::all();
   $blogs = Blog::all();
   return view('index',['products'=>$products , 'players'=>$players , 'blogs'=>$blogs]);
-});
+})->name("homePage");
 
 Route::get('/faq', function(){
 		return view('faq');
@@ -36,11 +36,13 @@ Route::get('/categories', function () {
 })->name('categories');
 
 Route::get('/blogs', function () {
-    return view('blogArchive');
+  $blogs = Blog::all();  
+  return view('blogArchive',['blogs' => $blogs]);
 })->name('blogArchive');
 
 Route::get('/blogs/{slug}',function($slug){
-		return view('blogSingle');
+    $blog = Blog::where('id',$slug)->first();
+		return view('blogSingle',['blog' => $blog]);
 })->name('blogSingle');
 
 Route::get('/products', function () {
@@ -49,8 +51,9 @@ Route::get('/products', function () {
 })->name("AllProducts");
 
 Route::get('/products/{slug}',function($slug){
-		return view('productsSingle');
-})->name('product');
+    $product = App\Product::where('id',$slug)->first();
+		return view('productsSingle',['product' => $product]);
+})->name('productSingle');
 
 Route::get('/players',function(){
 		return view('playersArchive');

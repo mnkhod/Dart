@@ -204,11 +204,11 @@
 		                </div>
 		            </div>
 		            <div class="c-products__items u-flex_wrap">
-						@for ($i=0;$i<19;$i++)
+					  @foreach($products as $p)	
 							<div id="singleProduct" class="c-products__items--item font-control">
-								@include('components.productCard',['p' => $products ])
+								@include('components.productCard',['p' => $p ])
 							</div>
-						@endfor
+						@endforeach
 
 		            </div>
 		            <div class="c-content">

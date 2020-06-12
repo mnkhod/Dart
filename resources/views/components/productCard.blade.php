@@ -17,7 +17,7 @@
 						</div>
 						<div class="u-card__content--img--hover">
 								<div class="u-card__content--img--hover_box">
-                  <a href="{{ route('product',$p->id) }}">
+                  <a href="{{ route('productSingle',$p->id) }}">
 										<img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
 										<img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
                   </a>

@@ -1,4 +1,11 @@
 @extends('layouts.main')
+@section('link')
+<style>
+.c-blogsingle__left--title--name h2{
+  font-size: 1em;
+}
+</style>
+@endsection
 
 @section('content')
 <div class="c-rapper2 a-article">
@@ -14,30 +21,28 @@
 			<div class="c-blogsingle__left">
 					<div class="c-blogsingle__left--title">
 							<div class="c-blogsingle__left--title--author">
+                  <?php $curr = new DateTime($blog->created_at); ?>
 									<img src="/img/New folder/scream1.png" alt="">
-									<span>Админ</span>
+									<span>{{App\User::where('id',$blog->userID)->first()->name}}</span>
 									<div class="blyad">
-											Админ
-											<p>2020.20.20</p>
+											{{App\User::where('id',$blog->userID)->first()->name}}
+											<p>{{$curr->format('Y-m-d')}}</p>
 									</div>
 							</div>
 							<div class="c-blogsingle__left--title--name">
-									<h2>Дартс гэж юу вэ?</h2>
-									<span>2020.20.20</span>
+									<h2>{{ $blog->name }}</h2>
+									<span>{{$curr->format('Y-m-d')}}</span>
 							</div>
 					</div>
 					<div class="c-blogsingle__left--content">
 							<div class="c-blogsingle__left--content--img">
-									<img src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
-									<div class="u-button_red">Нийтлэл</div>
+									<img src="{{ Voyager::image($blog->picture) }}" alt="">
+									<div class="u-button_red">{{ App\BlogCategory::where('id',$blog->blogCategoryID)->first()->name }}</div>
 							</div>
 							<div class="c-blogsingle__left--content--name">
 									<h2>Дартс гэж юу вэ?</h2>
 							</div>
-							<h4>Эхний хэсэг</h4>
-							<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae tenetur nobis velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae tenetur nobis velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae tenetur nobis velit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae tenetur nobis velit!</p>
-							<h4>Хоер дахь хэсэг</h4>
-							<p>Lorem ipsum, dolor  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae teLorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo labore libero nostrum, deleniti qui? Aut a earum in ullam mollitia quibusdam ut repellendus inventore beatae, quae tenetur nobis velit! tenetur nobis velit!netur nobis velit!sit amet consectetur adipisicing elit. In earum aperiam repellendus, adipisci odit repudiandae quidem officiis cumque quisquam voluptate, sunt nam velit repellat ex, dolor voluptas assumenda maxime consequatur!</p>
+							<p>{{$blog->description}}</p>
 							<div class="u-flex_between">
 									<a class="u-hover_icon">
 											<img src="/img/fb-red.png" alt="">
@@ -63,11 +68,11 @@
 							<h3>Бусад нийтлэлүүд</h3>
 					</div>
 					<div class="u-flex_wrap" style="width: 100%;">
-						@for($i=0; $i<4; $i++)
+						@foreach(App\Blog::all() as $b)
 							<div class="c-blogsingle__right--card">
-									@include('components.blogCard')
+									@include('components.blogCard',['blog' => $b])
 							</div>
-						@endfor
+						@endforeach
 					</div>
 			</div>
 	</div>

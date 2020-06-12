@@ -46,44 +46,72 @@
 			<div class="c-header u-flex_between a-relative">
 					<!-- PC Header -->
 					<div class="c-header__left u-flex_between">
-							<img src="/img/dats.png" alt="Company Logo">
+							<img onclick="window.location='{{ route('homePage') }}';" src="/img/dats.png" alt="Company Logo">
 							<ul class="c-header__left--menu u-flex_between black">
-									<li class="u-hover_main home-dropdown">
-										<a>Нүүр</a>
-										<div class="home-dropdown__tab">
-											<ol>
-												<li>
-													<a href="{{ route('faq') }}">
-														About Us
-													</a>
-												</li>
-												<li>
-													<a href="{{ route('aboutUs') }}">
-														FAQ
-													</a>
-												</li>
-											</ol>
-										</div>
-									</li>
-                  <li class="u-hover_main a-slow">
+                    <li class="u-hover_main home-dropdown">
+                    <a>Нүүр</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        <li>
+                          <a href="{{ route('faq') }}">
+                            FAQ
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{{ route('aboutUs') }}">
+                            About Us
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
+                    </li>
+                    <li class="u-hover_main home-dropdown">
                     <a>Бүтээгдэхүүн</a>
-										<div class="home-dropdown__tab">
-											<ol>
-												<li>
-													<a href="{{ route('faq') }}">
-														About Us
-													</a>
-												</li>
-												<li>
-													<a href="{{ route('aboutUs') }}">
-														FAQ
-													</a>
-												</li>
-											</ol>
-										</div>
-                  </li>
-									<li class="u-hover_main"><a>Блог</a></li>
-									<li class="u-hover_main"><a>Тоглогчид</a></li>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        @foreach(App\TopCategory::all() as $i)
+                        <li>
+                          <a href="{{ route('categories') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
+                    <li class="u-hover_main home-dropdown">
+                    <a>Блог</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        @foreach(App\BlogCategory::all() as $i)
+                        <li>
+                          <a href="{{ route('blogArchive') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
+                    <li class="u-hover_main home-dropdown">
+                    <a>Тоглогчид</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        <li>
+                          <a href="{{ route('AllPlayers') }}">
+                            All Players 
+                          </a>
+                        </li>
+                        @foreach(App\Player::all() as $i)
+                        <li>
+                          <a href="{{ route('AllPlayers') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
 							</ul>
 					</div>
 
@@ -174,53 +202,11 @@
 												<p>150'000</p>	
 												<button type="button" class="u-button_red-c">Хасах</button>
 											</li>
-											<li><img src="/img/shopping-bag-53.png" alt="">
-												<div class="inner-bag-hover-product ">
-													<h6>Барааны нэр</h6>
-													<div class="c-single__info--quan quantity">
-														<input type="number" min="0" max="99" step="1" value="1">
-														<div class="c-single__info--quan_i">
-															<i class="fas fa-plus-square"></i>
-															<i class="fas fa-minus-square"></i>
-														</div>
-													</div>
-												</div>
-												<p>150'000</p>	
-												<button type="button" class="u-button_red-c">Хасах</button>
-											</li>
-											<li><img src="/img/shopping-bag-53.png" alt="">
-												<div class="inner-bag-hover-product ">
-													<h6>Барааны нэр</h6>
-													<div class="c-single__info--quan quantity">
-														<input type="number" min="0" max="99" step="1" value="1">
-														<div class="c-single__info--quan_i">
-															<i class="fas fa-plus-square"></i>
-															<i class="fas fa-minus-square"></i>
-														</div>
-													</div>
-												</div>
-												<p>150'000</p>	
-												<button type="button" class="u-button_red-c">Хасах</button>
-											</li>
-											<li><img src="/img/shopping-bag-53.png" alt="">
-												<div class="inner-bag-hover-product ">
-													<h6>Барааны нэр</h6>
-													<div class="c-single__info--quan quantity">
-														<input type="number" min="0" max="99" step="1" value="1">
-														<div class="c-single__info--quan_i">
-															<i class="fas fa-plus-square"></i>
-															<i class="fas fa-minus-square"></i>
-														</div>
-													</div>
-												</div>
-												<p>150'000</p>	
-												<button type="button" class="u-button_red-c">Хасах</button>
-											</li>
 										</ul>
 									</nav>	
-										<div class="inner-bag-hover-tprice">Нийт дүн:300'000</div>
+										<div class="inner-bag-hover-tprice">Нийт дүн:0$</div>
 										<div class="purchase-section">
-											<div class="u-button">Сагс руу очих</div>
+											<div class="u-button" onclick="window.location='{{ route('cart') }}'">Сагс руу очих</div>
 											<div class="u-button_red">Сагс хоослох</div>
 										</div>
 									</div>

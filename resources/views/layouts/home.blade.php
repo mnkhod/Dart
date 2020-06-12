@@ -36,7 +36,7 @@
         <div class="c-header u-flex_between" style="box-shadow: none;">
             <!-- PC Header -->
             <div class="c-header__left u-flex_between">
-                <img src="img/dats.png" alt="Company Logo">
+							<img onclick="window.location='{{ route('homePage') }}';" src="/img/dats.png" alt="Company Logo">
                 <ul class="c-header__left--menu u-flex_between">
                     <li class="u-hover_main home-dropdown">
                     <a>Нүүр</a>
@@ -238,7 +238,7 @@
 									</nav>	
 										<div class="inner-bag-hover-tprice">Нийт дүн:300'000</div>
 										<div class="purchase-section">
-											<div class="u-button">Сагс руу очих</div>
+											<div class="u-button" onclick="window.location='{{ route('cart') }}'">Сагс руу очих</div>
 											<div class="u-button_red">Сагс хоослох</div>
 										</div>
 									</div>

@@ -9,17 +9,15 @@
 			<div class="u-container2 u-flex_wrap">
 					<div class="c-single__images">
 							<div class="c-single__images--big">
-									<img src="/img/New folder/baraa-2.png" alt="">
+									<img src="{{ Voyager::image(json_decode($product->pictures)[0]) }}" alt="">
 							</div>
 							<div class="c-single__images--slider">
 										<!-- Swiper -->
 											<div class="swiper-container">
 													<div class="swiper-wrapper">
-													<div class="swiper-slide"><img src="/img/New folder/baraa-2.png" alt=""></div>
-													<div class="swiper-slide"><img src="/img/New folder/baraa-3.png" alt=""></div>
-													<div class="swiper-slide"><img src="/img/New folder/baraa-4.png" alt=""></div>
-													<div class="swiper-slide"><img src="/img/New folder/baraa-5.png" alt=""></div>
-													<div class="swiper-slide"><img src="/img/New folder/baraa-6.png" alt=""></div>
+                          @foreach(json_decode($product->pictures) as $i)
+													<div class="swiper-slide"><img src="{{ Voyager::image($i) }}" alt=""></div>
+                          @endforeach
 													</div>
 													<!-- Add Arrows -->
 													<div class="swiper-button-next theme-red"></div>
@@ -29,21 +27,23 @@
 					</div>
 					<div class="c-single__info">
 							<div class="c-single__info--path">
-									<span id="">Дартс</span>
+                  <?php 
+                    $cat = App\Category::where('id',$product->categoryID)->first();
+                    $topCat = App\TopCategory::where('id',$cat->top_category_id)->first();
+                  ?>
+									<span id="">{{ $topCat->name }}</span>
 									<span class="dot">·</span>
-									<span>Хэрэгсэл</span>
+									<span>{{ $cat->name }}</span>
 							</div>
-							<h2>Барааны нэр</h2>
+							<h2>{{ $product->name }}</h2>
 							<div class="u-card__content--info_rating">
+                  @for($i=0;$i<$product->rating;$i++)
 									<i class="fa fa-star rating1" aria-hidden="true"></i>
-									<i class="fa fa-star rating2" aria-hidden="true"></i>
-									<i class="fa fa-star rating3" aria-hidden="true"></i>
-									<i class="fa fa-star rating4" aria-hidden="true"></i>
-									<i class="fa fa-star rating5" aria-hidden="true"></i>
+                  @endfor
 							</div>
 							<div class="u-hline"></div>
-							<span id="p-price">150'000$</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis aliquid est impedit excepturi, debitis illo amet ab quibusdam placeat repudiandae perspiciatis officia. Perspiciatis enim odio quae, aspernatur exercitationem officiis.</p>
+							<span id="p-price">{{$product->price}}$</span>
+							<p>{{$product->description}}</p>
 							<div class="u-flex_between">
 									<div class="c-single__info--quan quantity">
 											<input type="number" min="0" max="99" step="1" value="1">
@@ -221,11 +221,11 @@
 			<div class="u-container2 c-single__items">
 					<h5>Төстэй бараанууд</h5>
 					<div class="c-content__items">
-						@for($i=0; $i<4; $i++)
+	            @foreach(App\Product::all() as $p)
 							<div class="c-content__items--item">
-								@include('components.productCard')
+								@include('components.productCard',['p'=> $p])
 							</div>
-						@endfor
+              @endforeach
 					</div>
 			</div>
 			<div class="u-container2 c-single__comments">
