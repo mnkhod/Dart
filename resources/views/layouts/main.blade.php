@@ -53,24 +53,35 @@
 										<div class="home-dropdown__tab">
 											<ol>
 												<li>
-													<a href="">
-														Naachin chi hugshuun
+													<a href="{{ route('faq') }}">
+														About Us
 													</a>
 												</li>
 												<li>
-													<a href="">
-														Bawaltsah bandi bnu
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Chinii durtai awga ah
+													<a href="{{ route('aboutUs') }}">
+														FAQ
 													</a>
 												</li>
 											</ol>
 										</div>
 									</li>
-									<li class="u-hover_main a-slow"><a>Бүтээгдэхүүн</a></li>
+                  <li class="u-hover_main a-slow">
+                    <a>Бүтээгдэхүүн</a>
+										<div class="home-dropdown__tab">
+											<ol>
+												<li>
+													<a href="{{ route('faq') }}">
+														About Us
+													</a>
+												</li>
+												<li>
+													<a href="{{ route('aboutUs') }}">
+														FAQ
+													</a>
+												</li>
+											</ol>
+										</div>
+                  </li>
 									<li class="u-hover_main"><a>Блог</a></li>
 									<li class="u-hover_main"><a>Тоглогчид</a></li>
 							</ul>

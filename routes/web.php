@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Product;
+use App\Player;
+use App\Blog;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,48 +17,48 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+  $products = Product::all();  
+  $players = Player::all();
+  $blogs = Blog::all();
+  return view('index',['products'=>$products , 'players'=>$players , 'blogs'=>$blogs]);
 });
 
 Route::get('/faq', function(){
 		return view('faq');
-});
+})->name('faq');
 
 Route::get('/aboutUs', function () {
     return view('aboutUs');
-});
+})->name('aboutUs');
 
 Route::get('/categories', function () {
     return view('categories');
-});
-
+})->name('categories');
 
 Route::get('/blogs', function () {
     return view('blogArchive');
-});
+})->name('blogArchive');
 
 Route::get('/blogs/{slug}',function($slug){
 		return view('blogSingle');
-});
+})->name('blogSingle');
 
 Route::get('/products', function () {
-    return view('products',['products' => null]);
-});
+    $products = Product::all();
+    return view('products',['products' => $products]);
+})->name("AllProducts");
 
 Route::get('/products/{slug}',function($slug){
 		return view('productsSingle');
-});
-
+})->name('product');
 
 Route::get('/players',function(){
 		return view('playersArchive');
-});
-
+})->name('AllPlayers');
 
 Route::get('/profile/cart',function(){
 		return view('cart');
-});
-
+})->name('cart');
 
 Route::get('/profile/account',function(){
     return view('account');

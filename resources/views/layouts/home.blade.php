@@ -39,30 +39,69 @@
                 <img src="img/dats.png" alt="Company Logo">
                 <ul class="c-header__left--menu u-flex_between">
                     <li class="u-hover_main home-dropdown">
-						<a>Нүүр</a>
-						<div class="home-dropdown__tab">
-							<ol>
-								<li>
-									<a href="">
-										Naachin chi hugshuun
-									</a>
-								</li>
-								<li>
-									<a href="">
-										Bawaltsah bandi bnu
-									</a>
-								</li>
-								<li>
-									<a href="">
-										Chinii durtai awga ah
-									</a>
-								</li>
-							</ol>
-						</div>
+                    <a>Нүүр</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        <li>
+                          <a href="{{ route('faq') }}">
+                            FAQ
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{{ route('aboutUs') }}">
+                            About Us
+                          </a>
+                        </li>
+                      </ol>
+                    </div>
                     </li>
-                    <li class="u-hover_main a-slow"><a>Бүтээгдэхүүн</a></li>
-                    <li class="u-hover_main"><a>Блог</a></li>
-                    <li class="u-hover_main"><a>Тоглогчид</a></li>
+                    <li class="u-hover_main home-dropdown">
+                    <a>Бүтээгдэхүүн</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        @foreach(App\TopCategory::all() as $i)
+                        <li>
+                          <a href="{{ route('categories') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
+                    <li class="u-hover_main home-dropdown">
+                    <a>Блог</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        @foreach(App\BlogCategory::all() as $i)
+                        <li>
+                          <a href="{{ route('blogArchive') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
+                    <li class="u-hover_main home-dropdown">
+                    <a>Тоглогчид</a>
+                    <div class="home-dropdown__tab">
+                      <ol>
+                        <li>
+                          <a href="{{ route('AllPlayers') }}">
+                            All Players 
+                          </a>
+                        </li>
+                        @foreach(App\Player::all() as $i)
+                        <li>
+                          <a href="{{ route('AllPlayers') }}">
+                            {{$i->name}}
+                          </a>
+                        </li>
+                        @endforeach
+                      </ol>
+                    </div>
+                    </li>
                 </ul>
             </div>
 

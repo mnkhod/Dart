@@ -1,13 +1,13 @@
 <div class="u-pcard2 a-silver">
 	<div class="u-pcard2__img">
-		<img src="/img/New folder/scream1.png" alt="">
+		<img src="{{ Voyager::image($p->image) }}" alt="">
 		<div class="u-pcard2__img--hover">
-			<p>World Rank: #1</p>
-			<p>Televised Titles: 64</p>
-			<p>Non-Televised PDC Titles: 77</p>
-			<p>Televised Nine-dart Finished: 9</p>
+			<p>Nickname: {{$p->nickname}}</p>
+			<p>Dart Style: {{$p->dartStyle}}</p>
+			<p>Throwing Style: {{$p->throwingStyle}}</p>
+			<p>Best Match: {{$p->bestMatch}}</p>
 		</div>
 	</div>
-	<span id="player_name">Device AST</span>
-	<span id="player_role">Алт</span>
+	<span id="player_name">{{$p->name}}</span>
+	<span id="player_role">{{$p->rankTitle}}</span>
 </div>  
