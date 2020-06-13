@@ -96,9 +96,9 @@
 
             @foreach($blogs as $blog)
             <div class="c-content__blogs">
-                <img class="a-imgshadow a-left" src="{{ Voyager::image($blog->picture) }}" alt="">
+                <img class="a-imgshadow a-left" src="{{ asset(Voyager::image($blog->picture)) }}" alt="">
                 <div class="c-content__blogs--img a-left">
-                    <img class="scale-image a-left" src="{{ Voyager::image($blog->picture) }}" alt="">
+                    <img class="scale-image a-left" src="{{ asset(Voyager::image($blog->picture)) }}" alt="">
                 </div>
 
                 <div class="c-content__blogs--info a-right">
@@ -108,7 +108,7 @@
                         <p>{{Str::limit($blog->description,70)}}</p>
                         <div class="c-content__blogs--info--admin u-flex_wrap">
                             <div class="c-content__blogs--info--admin_info">
-                                <img src="{{ Voyager::image(App\User::where('id',$blog->userID)->first()->avatar) }}" alt="">
+                                <img src="{{ asset(Voyager::image(App\User::where('id',$blog->userID)->first()->avatar)) }}" alt="">
                                 <div>
                                     <span>{{App\User::where('id',$blog->userID)->first()->name}}</span></br>
                                     <?php $curr = new DateTime($blog->created_at); ?>

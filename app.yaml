@@ -1,0 +1,21 @@
+runtime: php72
+handlers:
+- url: /(.*\.(gif|png|jpg|css|js))$
+  static_files: public/\1
+  upload: public/.*\.(gif|png|jpg|css|js)$
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+env_variables:
+  ## Put production environment variables here.
+  APP_KEY: base64:1mjDnPPhNRpw9U+tp1geHlPnZwgORcTs5J1garWqeVs=
+  APP_STORAGE: /tmp
+  DB_CONNECTION: sqlite
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+  APP_URL: https://dart-ecommerce-website.df.r.appspot.com
+  APP_DEBUG: true
+
